@@ -1,19 +1,15 @@
 import React from 'react';
 
-import { Button, Tooltip } from 'shared/components';
+import Button from 'shared/components/Button';
+import Tooltip from 'shared/components/Tooltip';
 
 import feedbackImage from './assets/feedback.png';
 import { FeedbackDropdown, FeedbackImageCont, FeedbackImage, FeedbackParagraph } from './Styles';
 
-const ProjectBoardIssueDetailsFeedback = () => (
+const AboutTooltip = tooltipProps => (
   <Tooltip
     width={300}
-    offset={{ top: -15 }}
-    renderLink={linkProps => (
-      <Button icon="feedback" variant="empty" {...linkProps}>
-        Give feedback
-      </Button>
-    )}
+    {...tooltipProps}
     renderContent={() => (
       <FeedbackDropdown>
         <FeedbackImageCont>
@@ -27,16 +23,16 @@ const ProjectBoardIssueDetailsFeedback = () => (
 
         <FeedbackParagraph>
           {'Read more on our website or reach out via '}
-          <a href="mailto:ivor@codetree.co">
-            <strong>ivor@codetree.co</strong>
+          <a href="mailto:scorpion@dgu.ac.kr">
+            <strong>scorpion@dgu.ac.kr</strong>
           </a>
         </FeedbackParagraph>
 
-        <a href="https://codetree.co/" target="_blank" rel="noreferrer noopener">
+        <a href="https://nostaljic.tistory.com/" target="_blank" rel="noreferrer noopener">
           <Button variant="primary">Visit Website</Button>
         </a>
 
-        <a href="https://github.com/oldboyxx/jira_clone" target="_blank" rel="noreferrer noopener">
+        <a href="https://github.com/nostaljic/jira_react" target="_blank" rel="noreferrer noopener">
           <Button style={{ marginLeft: 10 }} icon="github">
             Github Repo
           </Button>
@@ -46,4 +42,4 @@ const ProjectBoardIssueDetailsFeedback = () => (
   />
 );
 
-export default ProjectBoardIssueDetailsFeedback;
+export default AboutTooltip;
