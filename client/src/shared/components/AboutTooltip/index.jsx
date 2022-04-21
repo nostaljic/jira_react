@@ -22,6 +22,7 @@ const AboutTooltip = tooltipProps => (
         </FeedbackParagraph>
 
         <FeedbackParagraph>
+
           {'Read more on our website or reach out via '}
           <a href="mailto:scorpion@dgu.ac.kr">
             <strong>scorpion@dgu.ac.kr</strong>
@@ -29,6 +30,7 @@ const AboutTooltip = tooltipProps => (
         </FeedbackParagraph>
 
         <a href="https://nostaljic.tistory.com/" target="_blank" rel="noreferrer noopener">
+
           <Button variant="primary">Visit Website</Button>
         </a>
 
